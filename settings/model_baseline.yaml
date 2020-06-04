@@ -1,0 +1,20 @@
+# =================================
+# Settings for the model.
+#
+# author: Wu Qianyang, Tao Shengqi, Yang Xingyu
+# affiliation: University of Electronic Science and Technology of China
+# =================================
+use_pre_trained_model: Yes
+# -----------------------------------
+encoder:
+  t_steps: 2600
+  in_channels: 1
+  input_dim_encoder: 64
+  output_dim_encoder: 32
+# -----------------------------------
+decoder:
+  output_dim_h_decoder: 256
+  nb_classes:  # Empty, to be filled automatically.
+  dropout_p_decoder: .25
+  max_out_t_steps: 22
+# EOF
